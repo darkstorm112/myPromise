@@ -1,0 +1,23 @@
+{
+  "name": "mypromise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "newPromise.js",
+  "scripts": {
+    "test": "promises-aplus-tests newPromise"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkstorm112/myPromise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkstorm112/myPromise/issues"
+  },
+  "homepage": "https://github.com/darkstorm112/myPromise#readme",
+  "devDependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./newPromise.js"></script>
+</head>
+<body>
+  <script>
+    let p = new Promise((resolve, reject)=>{
+      // setTimeout(()=>{
+        // throw '333'
+        reject('哈哈哈，我完成了')
+      // },100)
+    })
+    let p1 = p.then(resolve=>{
+      console.log(resolve)
+      return 1
+    }).then(resolve=>{
+      console.log(resolve)
+      return 2
+    }).then(resolve=>{
+      console.log(resolve)
+      return 3
+    }).then(resolve=>{
+      console.log(resolve)
+      return 4
+    }).then(resolve=>{
+      console.log(resolve)
+      return 5
+    }).catch(reason=>{
+      console.log(reason)
+      return 6
+    })
+
+    console.log(p)
+
+    console.log(p1)
+  </script>
+</body>
+</html>
